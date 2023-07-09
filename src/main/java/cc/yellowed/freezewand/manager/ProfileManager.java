@@ -17,5 +17,9 @@ public class ProfileManager {
         }
     }
 
+    public static Profile getByUUID(UUID uuid) {
+        return profileMap.get(uuid);
+    }
+
 
 }

@@ -3,6 +3,7 @@ package cc.yellowed.freezewand;
 import cc.yellowed.freezewand.command.FreezeWandCommand;
 import cc.yellowed.freezewand.listener.ConnectionListener;
 import cc.yellowed.freezewand.listener.FreezeWandListener;
+import cc.yellowed.freezewand.listener.FrozenPlayerListener;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -18,6 +19,7 @@ public final class Main extends JavaPlugin {
 
         Bukkit.getPluginManager().registerEvents(new ConnectionListener(), this);
         Bukkit.getPluginManager().registerEvents(new FreezeWandListener(), this);
+        Bukkit.getPluginManager().registerEvents(new FrozenPlayerListener(), this);
 
 
     }

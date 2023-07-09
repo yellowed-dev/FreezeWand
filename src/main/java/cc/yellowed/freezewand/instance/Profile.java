@@ -16,5 +16,13 @@ public class Profile {
         this(UUID.fromString(uuid));
     }
 
+    public boolean getFrozen() {
+        return frozen;
+    }
+
+    public void setFrozen(boolean frozen) {
+        this.frozen = frozen;
+    }
+
 
 }
